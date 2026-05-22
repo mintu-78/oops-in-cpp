@@ -8,6 +8,17 @@ class Teacher {
 
 
     public:
+
+    Teacher(){ //non parameterized
+        dept = "Computer Science";
+    }
+
+    Teacher(string n, string d, string s, double sal){//parameterized
+        name = n;
+        dept = d;
+        subject = s;
+        salary = sal;
+    }
     string name;
     string dept;
     string subject;
@@ -33,15 +44,16 @@ double getSalary(){
 
 
 int main (){
-    Teacher t1;
+    Teacher t1; //constructor call
+    Teacher t2;
    t1.name = "Mintu";
    t1.subject = "C++";
-   t1.dept = "Computer Science";
+//    t1.dept = "Computer Science";
    t1.setSalary (100000);
    
 
-   cout << t1.name <<endl;
-   cout << t1.getSalary() << endl;
+   cout << t1.dept <<endl;
+//    cout << t1.getSalary() << endl;
 
 
     return 0;
