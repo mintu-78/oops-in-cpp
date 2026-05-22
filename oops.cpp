@@ -18,6 +18,16 @@ class Teacher {
         dept = newDept;
     }
 
+    // setter
+    void setSalary(double s){
+        salary = s;
+    }
+
+    // getter
+double getSalary(){
+    return salary;
+}
+
 };
 
 
@@ -27,9 +37,11 @@ int main (){
    t1.name = "Mintu";
    t1.subject = "C++";
    t1.dept = "Computer Science";
+   t1.setSalary (100000);
    
 
    cout << t1.name <<endl;
+   cout << t1.getSalary() << endl;
 
 
     return 0;
